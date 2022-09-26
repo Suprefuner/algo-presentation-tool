@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algorithms</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/ea4456f54e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <h1 class="header__title">Algorithms</h1>
+        <div class="sort-type">
+          <div class="btn-sort-type btn btn--dark">
+            <span>selection</span>
+          </div>
+          <ul class="sort-type__list">
+            <li
+              class="sort-type__item btn btn--dark btn-selection"
+              data-sort="selection"
+            >
+              <span>selection</span>
+            </li>
+            <li
+              class="sort-type__item btn btn--dark btn-bubble"
+              data-sort="bubble"
+            >
+              <span>bubble</span>
+            </li>
+            <li
+              class="sort-type__item btn btn--dark btn-merge"
+              data-sort="merge"
+            >
+              <span>merge</span>
+            </li>
+          </ul>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item btn btn--light btn-example">
+              <span> example</span>
+            </li>
+            <li class="nav__item btn btn--light btn-flip">
+              <span> flip</span>
+            </li>
+            <li class="nav__item btn btn--light btn-reset">
+              <span> reset</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <div class="tool-group">
+        <span class="tool-describe">min number: </span>
+        <div class="tool-display">?</div>
+      </div>
+      <div class="array original-array" data-array="original">
+        <ul class="cards"></ul>
+      </div>
+      <div class="array sorted-array" data-array="sorted">
+        <ul class="cards"></ul>
+      </div>
+    </div>
+    <div class="cloud"></div>
+  </body>
+</html>
